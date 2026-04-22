@@ -7,7 +7,7 @@ import streamlit as st
 import requests
 
 # FastAPI URL
-API_URL = " https://huggingface.co/spaces/hafsaimranattaria7115/malaikawork"
+API_URL = "https://hafsaimranattaria7115-malaikawork.hf.space"
 st.set_page_config(page_title="DiabetaCheck", page_icon="🩺", layout="centered")
 
 st.title("🩺 DiabetaCheck - Diabetes Risk Predictor")
