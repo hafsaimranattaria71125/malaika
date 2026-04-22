@@ -1,0 +1,16 @@
+__pycache__
+.git
+.gitignore
+*.pyc
+.pytest_cache
+.env
+venv/
+.venv/
+.streamlit/
+.DS_Store
+*.egg-info
+dist/
+build/
+.idea/
+.vscode/
+node_modules/
