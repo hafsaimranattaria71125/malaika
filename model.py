@@ -102,9 +102,8 @@ def predictAns(body):
         risks.append(RiskFactor(label="Multiple Pregnancies", value=str(int(feats[0])), level="medium"))
 
     # ── Response (UNCHANGED) ────────────────────────────────────────────────
-    return PredictResponse(
-        prediction=pred,
-        probability=round(prob * 100, 1),
-        label="Diabetic" if pred == 1 else "Non-Diabetic",
-        risk_factors=risks,
-    )
+    return {
+    "prediction": pred,
+    "probability": round(prob * 100, 1),
+    "label": "Diabetic" if pred == 1 else "Non-Diabetic",
+    "risk_factors": risks,}
